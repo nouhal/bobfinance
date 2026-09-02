@@ -2,14 +2,14 @@ import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import { useState } from "react";
 import {
-    Modal,
-    SafeAreaView,
-    ScrollView,
-    StyleSheet,
-    Text,
-    TextInput,
-    TouchableOpacity,
-    View,
+  Modal,
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
 } from "react-native";
 
 type DropdownProps = {
@@ -103,23 +103,23 @@ const CustomDropdown = ({ label, value, options, onSelect }: DropdownProps) => {
 export default function UserInfoScreen() {
   const router = useRouter();
 
-  const [firstName, setFirstName] = useState("Theria");
-  const [lastName, setLastName] = useState("Hamed");
-  const [fatherName, setFatherName] = useState("Mahmoud");
-  const [motherName, setMotherName] = useState("Ruth Berry");
-  const [placeOfBirth, setPlaceOfBirth] = useState("Lebanon");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [fatherName, setFatherName] = useState("");
+  const [motherName, setMotherName] = useState("");
+  const [placeOfBirth, setPlaceOfBirth] = useState("");
 
-  const [idNumber, setIdNumber] = useState("01920 8201 8201 279");
+  const [idNumber, setIdNumber] = useState("");
 
-  const [gender, setGender] = useState("Female");
-  const [maritalStatus, setMaritalStatus] = useState("Married");
+  const [gender, setGender] = useState("");
+  const [maritalStatus, setMaritalStatus] = useState("");
 
-  const [spouseName, setSpouseName] = useState("Jad Kosay");
-  const [registryNumber, setRegistryNumber] = useState("02");
-  const [locality, setLocality] = useState("Downtown");
-  const [governorate, setGovernorate] = useState("Beirut");
-  const [district, setDistrict] = useState("Beirut");
-  const [bloodType, setBloodType] = useState("A+");
+  const [spouseName, setSpouseName] = useState("");
+  const [registryNumber, setRegistryNumber] = useState("");
+  const [locality, setLocality] = useState("");
+  const [governorate, setGovernorate] = useState("");
+  const [district, setDistrict] = useState("");
+  const [bloodType, setBloodType] = useState("");
 
   const handleContinue = () => {
     // Later we can send this information to your backend/API.
